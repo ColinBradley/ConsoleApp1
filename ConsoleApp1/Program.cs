@@ -45,7 +45,6 @@ while (isRunning)
 
     var commands = new List<ICommand>();
     commands.Add(new AddCommand() { Key = "A", Title = "Add new item" });
-    commands.Add(new DeleteCommand() { Key = "D", Title = "Delete item" });
     commands.Add(new CompleteCommand(todoItems));
 
     foreach (var command in commands)
